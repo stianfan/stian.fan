@@ -1,0 +1,140 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+*{padding:0;margin:0;}
+
+body {
+  font-family:Verdana, Geneva, sans-serif;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+.main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    width: 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: -24vw -44vh 2px 2px #fff,38vw -4vh 0px 0px #fff,-20vw -48vh 1px 2px #fff,-39vw 38vh 3px 1px #fff,-42vw -11vh 0px 3px #fff,12vw 15vh 3px 3px #fff,42vw 6vh 3px 2px #fff,-8vw 9vh 0px 2px #fff,34vw -38vh 1px 0px #fff,-17vw 45vh 3px 1px #fff,22vw -36vh 3px 2px #fff,-42vw 1vh 1px 0px #fff;
+    animation: zoom 30s alternate infinite;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  color: #FF9800;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: 99999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+}
+
+.crawl > .title {
+  font-size: 100%;
+  color: #ddd;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  color: #B80000;
+  text-transform: none;
+}
+
+@keyframes crawl {
+	0% {
+    top: -100px;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+	100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+
+.float-spotify{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:0px;
+	right:40px;
+	background-color:#000;
+	color:#5F8670;
+  font-size:36px;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #000;
+}
+.float-yt{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:0px;
+	right:110px;
+	background-color:#000;
+	color:#B80000;
+  font-size:36px;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #000;
+}
+.float-git{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:0px;
+	right:180px;
+	background-color:#000;
+	color:#ddd;
+  font-size:36px;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #000;
+}
+.float-steam{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:0px;
+	right:250px;
+	background-color:#000;
+	color:#3887be;
+  font-size:36px;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #000;
+}
